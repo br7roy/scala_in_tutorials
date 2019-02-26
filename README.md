@@ -1,2 +1,2 @@
-# scala_in_tutorials
+# learning scala
 
