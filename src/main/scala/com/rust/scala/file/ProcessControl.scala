@@ -57,10 +57,10 @@ object ProcessControl {
     //  给出命令和其实目录，以及一串(名称，值)对偶来设置环境变量
     val cmd = "ls"
     val dirName = "/soft/hadoop"
-    val p = Process(cmd, new File(dirName), ("LANG", "en_US"))
+//    val p = Process(cmd, new File(dirName), ("LANG", "en_US"))
 
     //  然后使用!操作符执行
-    ("echo hehe" #| p).!
+//    ("echo hehe" #| p).!
 
 
     //-------------

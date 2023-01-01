@@ -3,10 +3,10 @@ package com.rust.scala.file
 import scala.util.matching.Regex
 
 /**
-  * 正则表达式
-  *
-  * @author Rust
-  */
+ * 正则表达式
+ *
+ * @author Rust
+ */
 object ScalaRegPattern {
   def main(args: Array[String]): Unit = {
     //  使用String类的r方法可以创建一个Regex对象
@@ -51,7 +51,7 @@ object ScalaRegPattern {
     //  "XX bottiles, 98 bottles"
     numPattern.replaceAllIn("99 bottles, 98 bottles", "XX")
     //  "XX bottles, XX bottles"
-    numPattern.replaceSomeIn("99 bottles, 98 bottles", m => if (m.matched.toInt % 2 == 0) Some("XXX") else None)
+//    numPattern.replaceSomeIn("99 bottles, 98 bottles", m => if (m.matched.toInt % 2 == 0) Some("XXX") else None)
     //  "99 bottles, XX bottles"
 
     //  用一组参数一次替换某个消息字符串中的占位符$0,$1等，制作一个对下表分组的模式
@@ -82,12 +82,12 @@ object ScalaRegPattern {
 
     //------------------
     //  使用提取器，提取匹配项
-    val multiItemPattern(num, item) = "99 bottles"
+//    val multiItemPattern(num, item) = "99 bottles"
     //  从多个匹配中提取分组内容
     for (multiItemPattern(num, item) <- multiItemPattern.findAllIn("99 bottles, 98 bottles"))
+      println("hello")
     //  处理num,item
-      println(num, item)
-
+    //      println(num, item)
 
 
   }

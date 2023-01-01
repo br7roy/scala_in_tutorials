@@ -6,7 +6,7 @@ import java.nio.charset.StandardCharsets
 import java.nio.file.Files
 import java.util.function.Consumer
 
-import javax.xml.ws.ServiceMode
+//import javax.xml.ws.ServiceMode
 
 import scala.io.Source
 
@@ -90,7 +90,7 @@ object ReadNumberic {
 
     //-------------
     //  序列化
-    @SerialVersionUID(1L) class Person extends Serializable
+//    @SerialVersionUID(1L) class Person extends Serializable
 
     //  使用默认序列号
     class Person2 extends Serializable
